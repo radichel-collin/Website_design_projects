@@ -1,0 +1,124 @@
+/*notes
+#ID name
+.Class name
+tag itself (p{})
+*/
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.top-section{
+    border: solid 3px rgba(146, 91, 33, 0.764);
+    height: 8rem;
+    text-align: center;
+    width: calc(100vw - 16rem);
+}
+
+.logo{
+    border: solid 3px rgba(2, 255, 14, 0.953);
+    height:5rem;
+    align-items: center;
+}
+
+.ME {
+    color: #FF0000;
+    border-color: #FF0000;
+    border-style: solid;
+    margin-right: 1px;
+    padding-left: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: .5rem;
+}
+
+
+/*adjust the heights on the main grid rather than the side and main page and get rid of the 28 rem from the top section*/
+.page-body{
+    display: grid;
+    /*fr = fractional unit - these act as a weight:
+    this will use remaining space (could be the whole page if nothing is there) and distributes sizing based on these weights:
+    a 3 column grid with each column having 1 fr will make 3 equal columns
+    a 3 column grid with one having 2fr and the others having 1fr will give 11% of each grid to the fr unit (weights)
+    */
+    grid-template-columns: 1fr 5fr;
+}
+
+.logo-button:hover {
+    transform: translateY(4px);
+}
+
+.side-navigation{
+    /*how to gt the hight to go up to the green box - seems like its being forced by the grid into a certain position*/
+    border:solid 3px burlywood;
+    height:calc(100vh - 8rem - 28px);
+    /*calculations in CSS: take 100% of the "view height" and subtrack 8rem from the height. The 8rem is the height we set for
+    the top section. The "View Height" is device/resolution dependant and will automatically adjust*/
+}
+
+.sections{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.side-button{
+    border-radius: 10px;
+    border-color: #ff000000;
+    background-color: rgba(237, 240, 243, 0.042);
+    height:2.5rem;
+    margin:0px 1rem;
+    padding:1fr 1fr;
+}
+.side-button:hover {background-color: #dcdcdcb4}
+
+
+.home-button{
+    border-radius: 10px;
+    background-color: rgba(221, 221, 221, 0.449);
+    height:2.5rem;
+    margin:0px 1rem;
+    padding:1fr 1fr;
+}
+.home-button:hover {background-color: rgba(150, 150, 150, 0.527);}
+
+.icon-button{
+    display: flex;
+    justify-content: center;
+    height: 1.5rem;
+}
+
+
+.side-image{
+    /* Q | what is the better way to do this (align picture on the left and words center)? It is getting impacted by icon-button*/
+    margin-right: .5rem;
+}
+
+
+.content-pannel{
+    border: solid 3px rgb(98, 112, 1);
+    height:calc(100vh - 8rem - 28px);
+    width: calc(100vw - 1fr);
+    /*this creates a scroll bar for anything over. X is horizontal option*/
+    overflow-y: scroll;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.video{
+    grid-template-rows: 5fr 1fr;
+    text-align: center;
+}
+
+.box{
+    height: 13rem;
+    width: 22rem;
+    border: solid grey;
+    background-color: grey;
+    border-radius: 5%;
+    margin: .5rem 2rem;
+}

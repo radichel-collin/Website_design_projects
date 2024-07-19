@@ -1,0 +1,92 @@
+<!--
+GOAL:
+create a side and main content page using the grid functionality. This DIV will be placed under the top section.
+Each section should have colored borders
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Page Title</title>
+        <!--call to CSS page here-->
+        <link rel="stylesheet" href="./CSS/styles4CSSfile.css">
+    </head>
+
+<!--2 main divs, left and right. Inside left side, 2 divs - logo and menu. right side has top section and content page-->
+
+    <body>
+        <div class="page-body">
+            <!--
+                see here how to use a flexbox - this can be done inside a CSS sheet too
+                    wrap images and butotns inside a flexbox to work on alignment 
+            -->    
+                <div class="logo">
+                    <a href="https://www.youtube.com" target="_blank">
+                    <button class="logo-button" style="background-color: rgba(255, 0, 0, 0); border-color: rgba(0, 0, 0, 0);">
+                        <div style="height: 4rem; width: 8rem; border: solid 3px red; background-color: red; border-radius: 30px;">
+                            <p style="color:white; font-size: 2rem; vertical-align: middle; text-align: center; margin: auto;">ME</p>
+                        </div>
+                    </button>
+                    </a>
+                </div>
+
+                <div class="top-section">
+                    <h1><span class="ME">ME</span>tube, <span style="color:#FF0000">THE</span> Website</h1>
+                </div>
+
+                <div class="side-navigation" style="display:flexbox">
+                    <div class="sections">
+                        <button class="home-button" type="button" >Home</button>
+                        <button class="side-button" type="button">button1</button>
+                        <button class="side-button" type="button">button1</button>
+                        <hr style="margin: 1rem;">
+                        <button class="side-button" type="button" style="font-size: .9rem; color: black; text-align: left;">
+                            <b>You    ></b></button>
+
+                        <button class="side-button" type="button">
+                            <div class="icon-button">
+                                <img class="side-image" src="https://cdn-icons-png.flaticon.com/128/3342/3342047.png"
+                                alt="your channel">button1</div>
+                        </button>
+
+                        <button class="side-button" type="button">button1</button>
+                        <hr style="margin: 1rem;">
+                        <hr style="margin: 1rem;">
+
+                    </div>
+                </div>
+                <div class="content-pannel">
+                    <div class="video-grid">
+                        <div class="video">
+                            <div class="box"></div>
+                            <p>Video Text</p>
+                        </div>
+                        <div class="video">
+                            <div class="box"></div>
+                            <p>Video Text</p>
+                        </div><div class="video">
+                            <div class="box"></div>
+                            <p>Video Text</p>
+                        </div><div class="video">
+                            <div class="box"></div>
+                            <p>Video Text</p>
+                        </div><div class="video">
+                            <div class="box"></div>
+                            <p>Video Text</p>
+                        </div><div class="video">
+                            <div class="box"></div>
+                            <p>Video Text</p>
+                        </div><div class="video">
+                            <div class="box"></div>
+                            <p>Video Text</p>
+                        </div><div class="video">
+                            <div class="box"></div>
+                            <p>Video Text</p>
+                        </div>
+                    </div>    
+                </div>
+        </div>
+
+    </body>
+</html> 
